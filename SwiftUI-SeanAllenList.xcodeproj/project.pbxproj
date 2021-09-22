@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		19EF8EFB26FAD84900137A68 /* SwiftUI_SeanAllenListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF8EFA26FAD84900137A68 /* SwiftUI_SeanAllenListApp.swift */; };
-		19EF8EFD26FAD84900137A68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF8EFC26FAD84900137A68 /* ContentView.swift */; };
-		19EF8EFF26FAD84A00137A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EF8EFE26FAD84A00137A68 /* Assets.xcassets */; };
+		19EF8EFD26FAD84900137A68 /* SeanAllenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF8EFC26FAD84900137A68 /* SeanAllenListView.swift */; };
 		19EF8F0226FAD84A00137A68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EF8F0126FAD84A00137A68 /* Preview Assets.xcassets */; };
+		19EF8F0D26FAD8EB00137A68 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF8F0C26FAD8EB00137A68 /* Video.swift */; };
+		19EF8F1126FADA4100137A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EF8F1026FADA4100137A68 /* Assets.xcassets */; };
+		19EF8F1826FAE1A800137A68 /* VideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF8F1726FAE1A800137A68 /* VideoDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19EF8EF726FAD84900137A68 /* SwiftUI-SeanAllenList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-SeanAllenList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EF8EFA26FAD84900137A68 /* SwiftUI_SeanAllenListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SeanAllenListApp.swift; sourceTree = "<group>"; };
-		19EF8EFC26FAD84900137A68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		19EF8EFE26FAD84A00137A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19EF8EFC26FAD84900137A68 /* SeanAllenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeanAllenListView.swift; sourceTree = "<group>"; };
 		19EF8F0126FAD84A00137A68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19EF8F0326FAD84A00137A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EF8F0C26FAD8EB00137A68 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		19EF8F1026FADA4100137A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19EF8F1726FAE1A800137A68 /* VideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		19EF8EF926FAD84900137A68 /* SwiftUI-SeanAllenList */ = {
 			isa = PBXGroup;
 			children = (
+				19EF8F0B26FAD8DC00137A68 /* Model */,
 				19EF8EFA26FAD84900137A68 /* SwiftUI_SeanAllenListApp.swift */,
-				19EF8EFC26FAD84900137A68 /* ContentView.swift */,
-				19EF8EFE26FAD84A00137A68 /* Assets.xcassets */,
+				19EF8EFC26FAD84900137A68 /* SeanAllenListView.swift */,
+				19EF8F1026FADA4100137A68 /* Assets.xcassets */,
 				19EF8F0326FAD84A00137A68 /* Info.plist */,
 				19EF8F0026FAD84A00137A68 /* Preview Content */,
+				19EF8F1726FAE1A800137A68 /* VideoDetailsView.swift */,
 			);
 			path = "SwiftUI-SeanAllenList";
 			sourceTree = "<group>";
@@ -67,6 +73,14 @@
 				19EF8F0126FAD84A00137A68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		19EF8F0B26FAD8DC00137A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19EF8F0C26FAD8EB00137A68 /* Video.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19EF8F1126FADA4100137A68 /* Assets.xcassets in Resources */,
 				19EF8F0226FAD84A00137A68 /* Preview Assets.xcassets in Resources */,
-				19EF8EFF26FAD84A00137A68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19EF8EFD26FAD84900137A68 /* ContentView.swift in Sources */,
+				19EF8EFD26FAD84900137A68 /* SeanAllenListView.swift in Sources */,
+				19EF8F1826FAE1A800137A68 /* VideoDetailsView.swift in Sources */,
+				19EF8F0D26FAD8EB00137A68 /* Video.swift in Sources */,
 				19EF8EFB26FAD84900137A68 /* SwiftUI_SeanAllenListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
